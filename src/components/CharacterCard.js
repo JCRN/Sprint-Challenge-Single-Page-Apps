@@ -5,14 +5,14 @@ export default function CharacterCard({ character }) {
   return (
     <Card>
       <Image src={character.image} wrapped ui={false} />
-      <Card.Content>
+      <Card.Content className="character-content">
         <Card.Header>{character.name}</Card.Header>
         <Card.Meta>
           <span className="character-species">{character.species}</span>
           <span className="character-status">{character.status}</span>
         </Card.Meta>
         <Card.Description>
-          <span className="charachter-location">
+          <span className="character-location">
             Location: {character.location.name}
           </span>
           <span className="character-origin">
