@@ -10,9 +10,9 @@ export default function AppRouter() {
     <div className="page-view ui bottom attached segment active tab">
       <Switch>
         <Route exact path="/" component={WelcomePage} />
-        <Route exact path="/characters" component={CharacterList} />
-        <Route exact path="/locations" component={LocationsList} />
-        <Route exact path="/episodes" component={EpisodesList} />
+        <Route path="/characters" component={CharacterList} />
+        <Route path="/locations" component={LocationsList} />
+        <Route path="/episodes" component={EpisodesList} />
       </Switch>
     </div>
   );
