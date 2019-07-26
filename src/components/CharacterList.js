@@ -19,12 +19,12 @@ export default function CharacterList() {
   console.log("characters", characters);
 
   return (
-    <section className="character-list grid-view">
-      <h2 className="character-cards">
-        {characters.map(character => (
-          <CharacterCard key={character.id} character={character} />
-        ))}
-      </h2>
-    </section>
+    // <section className="character-list grid-view">
+    <h2 className=" character-list grid-view character-cards">
+      {characters.map(character => (
+        <CharacterCard key={character.id} character={character} />
+      ))}
+    </h2>
+    // </section>
   );
 }
